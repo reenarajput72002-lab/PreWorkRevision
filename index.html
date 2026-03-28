@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Reena Website</title>
+
+    <style>
+      body{
+        font-family:Arial;
+        background:linear-gradient(to right,
+                                   pink, green);
+        text-align:center;
+      }
+
+      nav{
+        background:black;
+        padding:10px;
+      }
+
+      nav a{
+        color:white;
+        margin"10px;
+        text-decoration:none;
+      }
+
+      nav a:hover{
+        color:yellow;
+      }
+
+      button{
+        background:blue;
+        color:white;
+        padding:10px;
+        border:none;
+        border-radius:5px;
+        transition:0.3s;
+      }
+      button:hover{
+        background:red;
+        transform:scale(1.1);
+      }
+
+      .gallery{
+        display:flex;
+        gap:10px;
+        justify-content:center;
+      }
+
+      .gallery img{
+        border-radius:10px;
+        transition:0.3s;
+        width:200px;
+      }
+
+      .gallery img:hover{
+        transform:scale(1.2);
+      }
+
+      </style>
+
+<script>
+  function changeText(){
+    document.getElementById("demo").innerHTML
+    ="Welcome Reena";
+  }
+</script>
+    
+  </head>
+
+
+  <body>
+    <h1>My Professional Website</h1>
+
+    <nav>
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr>
+
+    <h2 id="demo">Hello</h2>
+<button onclick="changeText()">Click 
+  Magic</button>
+
+<hr>
+    <h2>Image Gallery</h2>
+
+    <div class="gallery">
+      <img src="https://picsum.photos/200">
+      <img src="https://picsum.photos/201">
+      <img src="https://picsum.photos/202">
+      <img src="https://picsum.photos/203">
+
+    </div>
+  </body>
+  </html>
